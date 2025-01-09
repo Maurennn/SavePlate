@@ -173,21 +173,22 @@
     .logo-container {
         width: 100%;
         overflow: hidden;
-        background: #f8f8f8;
+        background: #ffffff;
         padding: 20px 0;
+        margin-top: 40px; /* Memberikan jarak atas jika diperlukan */
     }
     
     /* Styling untuk logo-slide */
     .logo-slide {
         display: flex;
         animation: slide 20s linear infinite;
+        justify-content: center; /* Mengatur gambar agar terpusat secara horizontal */
     }
     
     /* Styling gambar di dalam logo-slide */
     .logo-slide img {
         height: 80px;
         margin: 0 40px;
-        /* Gunakan placeholder untuk demo */
     }
     
     /* Keyframes untuk animasi slide */
@@ -204,7 +205,7 @@
     .logo-container:hover .logo-slide {
         animation-play-state: paused;
     }
-    
+
     #contact h1 {
         position: relative;
     }
