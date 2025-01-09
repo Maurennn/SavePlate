@@ -10,7 +10,7 @@ body {
 header {
     background-color: #B5EABA;
     color: white;
-    padding: 20px;
+    padding: 16px 64px;
     position: sticky;
     top: 0;
     width: 100%;
@@ -64,7 +64,7 @@ header h1 {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 16px 128px;
     margin: 0;
     display: flex;
     gap: 20px;
