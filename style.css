@@ -149,7 +149,7 @@ nav > a:hover {
     margin-bottom: 16px;
 }
 
-.service-header {
+.mitra-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,37 +170,39 @@ nav > a:hover {
     z-index: -1;
 }
 
-.service-detail {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 128px;
-    margin-top: 72px;
-}
-
-.service-detail-item {
-    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-.service-detail-item:hover {
-    transform: scale(1.15);
-}
-
-.service-detail-item:hover img {
-    filter: grayscale(0);
-}
-
-.service-detail-item img {
+.logo-container {
     width: 100%;
-    filter: grayscale(1);
+    overflow: hidden;
+    background: #ffffff;
+    padding: 20px 0;
 }
 
-.service-detail-item h2 {
-    padding: 0 16px;
+/* Styling untuk logo-slide */
+.logo-slide {
+    display: flex;
+    animation: slide 20s linear infinite;
 }
 
-.service-detail-item p {
-    font-size: 16px;
-    padding: 0 16px;
+/* Styling gambar di dalam logo-slide */
+.logo-slide img {
+    height: 80px;
+    margin: 0 40px;
+    /* Gunakan placeholder untuk demo */
+}
+
+/* Keyframes untuk animasi slide */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hover effect untuk menghentikan animasi */
+.logo-container:hover .logo-slide {
+    animation-play-state: paused;
 }
 
 #contact h1 {
