@@ -10,7 +10,7 @@ body {
 header {
     background-color: #b5eaba;
     color: white;
-    padding: 20px 0;
+    padding: 24px;
     position: sticky;
     top: 0;
     width: 100%;
@@ -27,8 +27,10 @@ header .container {
 }
 
 header h1 {
-    font-size: 24px;
+    margin: 0;
+    /* animation: flash 1s infinite; */
     animation: bounceIn 1s;
+    color: white;
 }
 
 @keyframes bounceIn {
@@ -74,7 +76,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: black;
 }
 
 /* Section Menu */
