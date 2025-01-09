@@ -215,14 +215,22 @@
         overflow: hidden;
         background: #ffffff;
         padding: 20px 0;
+<<<<<<< HEAD
         margin-top: 32px; /* Menambahkan jarak antara tulisan dan gambar */
+=======
+        margin-top: 40px; /* Memberikan jarak atas jika diperlukan */
+>>>>>>> eeaee055edcbe1feebe0bc63143144b06eb28127
     }
     
     .logo-slide {
         display: flex;
         animation: slide 20s linear infinite;
+<<<<<<< HEAD
         justify-content: center;
         align-items: center;
+=======
+        justify-content: center; /* Mengatur gambar agar terpusat secara horizontal */
+>>>>>>> eeaee055edcbe1feebe0bc63143144b06eb28127
     }
     
     .logo-slide img {
@@ -239,8 +247,16 @@
         }
     }
     
+<<<<<<< HEAD
     
     
+=======
+    /* Hover effect untuk menghentikan animasi */
+    .logo-container:hover .logo-slide {
+        animation-play-state: paused;
+    }
+
+>>>>>>> eeaee055edcbe1feebe0bc63143144b06eb28127
     #contact h1 {
         position: relative;
     }
