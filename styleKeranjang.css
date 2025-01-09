@@ -1,16 +1,28 @@
 * {
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Body Style */
 body {
-    font-family: 'Montserrat', sans-serif;;
     background-color: #f4f4f4;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-size: 24px;
 }
 
 /* Container */
@@ -37,6 +49,7 @@ body {
     margin: 0;
     /* animation: flash 1s infinite; */
     animation: bounceIn 1s;
+    color: white;
 }
 
 @keyframes bounceIn {
@@ -74,6 +87,7 @@ nav > a {
 nav > a:hover {
     color: #121212;
 }
+
 /* Tabs */
 .tabs {
     display: flex;
