@@ -390,7 +390,7 @@
     }
     
     .search-input {
-        padding: 15px;
+        padding: 25px;
         width: 75%;
         border: 2px solid black; /* Menambahkan border hitam di sekitar input */
         border-radius: 20px; /* Membuat border input melengkung */
