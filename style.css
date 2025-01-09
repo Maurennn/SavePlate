@@ -232,7 +232,6 @@ nav > a:hover {
 form {
     display: flex;
     flex-direction: column;
-    border: 3px solid #000000;
     padding: 0;
 }
 
@@ -383,3 +382,39 @@ footer p {
         width: 100%;
     }
 }
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    width: 200px;
+    border: 2px solid black; /* Menambahkan border hitam di sekitar input */
+    border-radius: 20px; /* Membuat border input melengkung */
+    margin-right: 8px;
+    outline: none; /* Menghapus outline default saat fokus */
+}
+
+.search-btn {
+    background-color: transparent; /* Menghapus latar belakang tombol */
+    border: none; /* Menghapus border tombol */
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 50px; /* Ukuran ikon */
+    height: 50px;
+    background: none;
+}
+
+.search-btn:hover {
+    background-color: transparent; /* Tidak ada perubahan saat tombol disorot */
+}
+
+.search-input:focus {
+    outline: none; /* Menghapus outline saat input difokuskan */
+    box-shadow: none; /* Menghapus shadow jika ada */
+}
+
