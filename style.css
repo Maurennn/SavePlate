@@ -38,13 +38,13 @@ img, iframe {
 .btn {
     background-color: #b5eaba;
     color: white;
-    padding: 8px 24px;
+    padding: 0px;
 }
 
 .btn-alt {
     background-color: white;
     color: black;
-    margin-right: 16px;
+    margin-right: 0x;
     border: 2px solid #b5eaba;
 }
 
@@ -231,8 +231,10 @@ nav > a:hover {
 form {
     display: flex;
     flex-direction: column;
-    border: 3px solid #FFC108;
-    padding: 64px 32px;
+    border: 3px solid #000000;
+    max-width: 400px; /* Batasi lebar formulir */
+    margin: 0 auto; /* Tengahkan formulir */
+    padding: 16px; /* Berikan ruang di dalam formulir */
 }
 
 form h1 {
@@ -304,7 +306,7 @@ form button:hover {
 
 footer {
     padding: 16px 128px;
-    background-color: #FFC108;
+    background-color: #b5eaba;
     color: white;
     display: flex;
     justify-content: space-between;
