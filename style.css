@@ -170,74 +170,27 @@
         z-index: -1;
     }
 
-    #service {
-        padding: 64px 128px;
-        display: flex;
-        flex-direction: column; /* Mengubah elemen ke arah kolom */
-        align-items: center;
-    }
-    
-    .service-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 16px; /* Menambahkan jarak lebih banyak antara teks dan gambar */
-    }
-    
-    .service-header h1 {
-        font-size: 32px;
-        margin: 0;
-    }
-    
-    #service {
-        padding: 64px 128px;
-        display: flex;
-        flex-direction: column; /* Mengubah elemen ke arah kolom */
-        align-items: center;
-    }
-    
-    .service-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 16px; /* Menambahkan jarak lebih banyak antara teks dan gambar */
-    }
-    
-    .service-header h1 {
-        font-size: 32px;
-        margin: 0;
-    }
-    
     .logo-container {
         width: 100%;
         overflow: hidden;
-        background: #ffffff;
+        background: #f8f8f8;
         padding: 20px 0;
-<<<<<<< HEAD
-        margin-top: 32px; /* Menambahkan jarak antara tulisan dan gambar */
-=======
-        margin-top: 40px; /* Memberikan jarak atas jika diperlukan */
->>>>>>> eeaee055edcbe1feebe0bc63143144b06eb28127
     }
     
+    /* Styling untuk logo-slide */
     .logo-slide {
         display: flex;
         animation: slide 20s linear infinite;
-<<<<<<< HEAD
-        justify-content: center;
-        align-items: center;
-=======
-        justify-content: center; /* Mengatur gambar agar terpusat secara horizontal */
->>>>>>> eeaee055edcbe1feebe0bc63143144b06eb28127
     }
     
+    /* Styling gambar di dalam logo-slide */
     .logo-slide img {
         height: 80px;
         margin: 0 40px;
+        /* Gunakan placeholder untuk demo */
     }
     
+    /* Keyframes untuk animasi slide */
     @keyframes slide {
         0% {
             transform: translateX(0);
@@ -247,16 +200,11 @@
         }
     }
     
-<<<<<<< HEAD
-    
-    
-=======
     /* Hover effect untuk menghentikan animasi */
     .logo-container:hover .logo-slide {
         animation-play-state: paused;
     }
-
->>>>>>> eeaee055edcbe1feebe0bc63143144b06eb28127
+    
     #contact h1 {
         position: relative;
     }
