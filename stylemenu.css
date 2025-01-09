@@ -124,7 +124,7 @@ nav ul li a:hover {
 .menu-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: #CCE7D0;
+    border-color: #B5EABA;
 }
 
 /* Detail Produk */
@@ -144,7 +144,7 @@ nav ul li a:hover {
 }
 
 .back-button:hover {
-    color: #CCE7D0;
+    color: #B5EABA;
     text-decoration: underline;
 }
 
