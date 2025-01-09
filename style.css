@@ -63,6 +63,7 @@ img, iframe {
     margin: 0;
     /* animation: flash 1s infinite; */
     animation: bounceIn 1s;
+    color: white;
 }
 
 @keyframes bounceIn {
