@@ -10,7 +10,7 @@ body {
 header {
     background-color: #B5EABA;
     color: white;
-    padding: 20px;
+    padding: 16px;
     position: sticky;
     top: 0;
     width: 100%;
@@ -21,7 +21,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1295px;
     margin: 0 auto;
     padding: 0 20px;
 }
