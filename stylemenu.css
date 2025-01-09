@@ -10,9 +10,9 @@ body {
 header {
     background-color: #B5EABA;
     color: white;
-    padding: 20px 128px;
+    padding: 20px;
     position: sticky;
-    top: 0; 
+    top: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -31,6 +31,7 @@ header h1 {
     /* animation: flash 1s infinite; */
     animation: bounceIn 1s;
     color: white;
+    font-size: 48px;
 }
 
 @keyframes bounceIn {
