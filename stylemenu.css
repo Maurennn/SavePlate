@@ -28,7 +28,6 @@ header .container {
 
 header h1 {
     margin: 0;
-    /* animation: flash 1s infinite; */
     animation: bounceIn 1s;
     color: white;
     font-size: 48px;
@@ -75,6 +74,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: 200;
     font-size: 24px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
