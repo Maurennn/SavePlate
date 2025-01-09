@@ -10,9 +10,9 @@ body {
 header {
     background-color: #B5EABA;
     color: white;
-    padding: 24px;
+    padding: 20px 128px;
     position: sticky;
-    top: 0;
+    top: 0; 
     width: 100%;
     z-index: 1000;
 }
