@@ -25,15 +25,15 @@
         <form action="login.php" method="POST">
             <div class="form-group">
                 <div class="input-group">
-                    <label for="email">Email</label>
+                    <label for="email"></label>
                     <input type="email" id="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-group">
-                    <label for="password">Password</label>
+                    <label for="password"></label>
                     <input type="password" id="password" placeholder="Your Password" required>
                 </div>
+                <button class="btn">Login</button>
             </div>
-            <button class="btn">Login</button>
             <p>
                 <span style="color: black;">Don't have an account?</span> 
                 <a href="register.html" style="color: #6cb4f7;">Register here</a>
@@ -55,73 +55,84 @@
 
     <style>
         #login {
-    padding: 50px;
-    text-align: center;
-}
+            padding: 50px;
+            text-align: center;
+        }
 
-#login h1 {
-    margin-bottom: 20px;
-    font-size: 32px;
-}
+        #login h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
 
-form p {
-        margin-top: 15px;
-        font-size: 14px;
-    }
+        form p {
+                margin-top: 15px;
+                font-size: 14px;
+            }
 
-form p a {
-    font-size: 14px;
-    color: #004f9a;
-    text-decoration: none;
-}
+        form p a {
+            font-size: 14px;
+            color: #004f9a;
+            text-decoration: none;
+        }
 
-form p a:hover {
-    text-decoration: underline;
-}
+        form p a:hover {
+            text-decoration: underline;
+        }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
 
-.input-group {
-    width: 100%;
-    max-width: 350px;
-}
+        .input-group {
+            width: 100%;
+            max-width: 350px;
+        }
 
-.input-group label {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
 
-button.btn {
-    padding: 8px 20px;
-    background-color:   #1d4ce6;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    max-width: 350px;
-    width: 100%;
-    margin: auto;
-}
+        button.btn {
+            padding: 8px 20px;
+            background-color:   #d4d5d8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            max-width: 350px;
+            width: 100%;
+            margin: auto;
+        }
 
-button.btn:hover {
-    background-color: #2e50c0;
-}
+        button.btn:hover {
+            text-decoration: underline;
+        }
+
+        #login form {
+            border: 2px solid #e3e1e1; /* Menyamakan border dengan input email dan password */
+            border-radius: 5px; /* Menambahkan border-radius untuk keseragaman */
+            padding: 20px;
+            display: inline-block; /* Menjaga form agar tidak memakan seluruh lebar */
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek shadow */
+        }
+
 
     </style>
 </body>

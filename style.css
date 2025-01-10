@@ -55,7 +55,7 @@
         
         padding: 10px 20px;
         border: none;
-        background-color: #a5e9d2;
+        background-color: #34a17b;
         color:#040404;
         border: none;
         border-radius: 5px;
@@ -66,7 +66,7 @@
         background-color: white;
         color: black;
         margin-right: 0x;
-        border: 2px solid #a5e9d2;
+        border: 2px solid #34a17b;
     }
 
     #header {
@@ -76,7 +76,7 @@
         padding: 16px 128px;
         position: sticky;
         top: 0;
-        background-color: #a5e9d2;
+        background-color: #34a17b;
         z-index: 5;
     }
 
@@ -165,7 +165,7 @@
     .about-stats-item div {
         width: 50px;
         height: 10px;
-        background-color: #a5e9d2;
+        background-color: #34a17b;
         margin-bottom: 16px;
     }
 
@@ -321,12 +321,12 @@
     }
 
     .input-group input:focus {
-        border-bottom: 2px solid #a5e9d2;
+        border-bottom: 2px solid #34a17b;
     }
 
     footer {
         padding: 16px 128px;
-        background-color: #a5e9d2;
+        background-color: #34a17b;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -426,7 +426,7 @@
     
     .goals-item {
         width: 90%;
-        background-color: #a5e9d2;
+        background-color: #34a17b;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -446,7 +446,7 @@
     #about-us {
         text-align: center;
         padding: 64px 0;
-        background-color: #a5e9d2;
+        background-color: #34a17b;
         color: black;
         width: 100vw;
         margin: 0;
