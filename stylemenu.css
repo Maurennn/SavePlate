@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    background-color: #B5EABA;
+    background-color: #a5e9d2;
     color: white;
     padding: 16px;
     position: sticky;
@@ -129,7 +129,7 @@ nav ul li a:hover {
 .menu-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-color: #B5EABA;
+    border-color: #a5e9d2;
 }
 
 /* Detail Produk */
@@ -149,7 +149,7 @@ nav ul li a:hover {
 }
 
 .back-button:hover {
-    color: #B5EABA;
+    color: #a5e9d2;
     text-decoration: underline;
 }
 
