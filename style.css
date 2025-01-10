@@ -424,3 +424,67 @@
         outline: none; /* Menghapus outline saat input difokuskan */
         box-shadow: none; /* Menghapus shadow jika ada */
     }
+
+    #goals {
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    .goals-header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .goals-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        justify-items: center;
+        padding: 20px 0;
+    }
+    
+    .goals-item {
+        width: 90%;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .goals-item h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .goals-item p {
+        font-size: 1rem;
+        color: #555;
+    }
+    
+    #about-us {
+        text-align: center;
+        padding: 64px 0;
+        background-color: #b5eaba;
+        color: black;
+        width: 100vw;
+        margin: 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #about-us h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    #about-us p {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+        color: black;
+    }
+    
