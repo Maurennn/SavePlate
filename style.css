@@ -25,6 +25,12 @@
     max-width: 100%; /* Mencegah tombol terlalu besar pada layar kecil */
 }
 
+#landing img {
+    margin-left: auto;
+    display: block;
+    width: 100%; /* Sesuaikan ukuran gambar */
+}
+
     a {
         text-decoration: none;
         color: rgb(255, 253, 253);
