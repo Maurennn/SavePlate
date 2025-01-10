@@ -11,9 +11,20 @@
 
     h1 {
         font-weight: 700;
-        font-size: 48px;
+        font-size: 50px;
         margin: 0 0 16px 0;
     }
+
+#landing h1{
+    font-size: 70px;
+}
+
+#landing .btn {
+    border: 2px solid #040404;
+    font-size: 100%;
+    width: 10px; /* Mengatur lebar spesifik */
+    max-width: 100%; /* Mencegah tombol terlalu besar pada layar kecil */
+}
 
     a {
         text-decoration: none;
@@ -387,46 +398,6 @@
         .contact-detail form, .contact-detail > div {
             width: 100%;
         }
-    }
-
-    .search-container {
-        position: relative; /* Menambahkan posisi relatif pada container */
-        display: flex;
-        align-items: center;
-    }
-    
-    .search-input {
-        padding: 25px;
-        width: 75%;
-        border: 2px solid black; /* Menambahkan border hitam di sekitar input */
-        border-radius: 20px; /* Membuat border input melengkung */
-        margin-right: 8px;
-        outline: none; /* Menghapus outline default saat fokus */
-        padding-left: 40px; /* Memberikan ruang untuk ikon di kiri input */
-    }
-    
-    .search-btn {
-        background-color: transparent; /* Menghapus latar belakang tombol */
-        border: none; /* Menghapus border tombol */
-        cursor: pointer;
-        position: absolute; /* Mengatur posisi ikon di dalam input */
-        left: 10px; /* Posisi ikon di dalam kotak pencarian */
-        top: 50%;
-        transform: translateY(-50%); /* Vertikal center */
-    }
-    
-    .search-icon {
-        width: 20px; /* Ukuran ikon lebih kecil */
-        height: 20px;
-    }
-    
-    .search-btn:hover {
-        background-color: transparent; /* Tidak ada perubahan saat tombol disorot */
-    }
-    
-    .search-input:focus {
-        outline: none; /* Menghapus outline saat input difokuskan */
-        box-shadow: none; /* Menghapus shadow jika ada */
     }
 
     #goals {
