@@ -20,7 +20,6 @@
 }
 
 #landing .btn {
-    border: 2px solid #040404;
     font-size: 100%;
     width: 10px; /* Mengatur lebar spesifik */
     max-width: 100%; /* Mencegah tombol terlalu besar pada layar kecil */
