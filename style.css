@@ -435,12 +435,12 @@
     .goals-item h2 {
         font-size: 1.6rem;
         font-weight: 600;
-        color: #333;
+        color: #1a1919;
     }
     
     .goals-item p {
         font-size: 1rem;
-        color: #555;
+        color: #474747;
     }
     
     #about-us {
@@ -457,7 +457,7 @@
         font-size: 48px;
         margin-bottom: 16px;
         font-weight: 700;
-        color: black;
+        color: rgb(0, 0, 0);
         padding-bottom: 10px;
     }
     
@@ -466,7 +466,7 @@
         max-width: 900px;
         margin: 0 auto;
         line-height: 1.8;
-        color: black;
+        color: rgb(255, 255, 255);
         text-align: justify;
         padding-top: 10px;
         padding-bottom: 10px;
