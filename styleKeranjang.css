@@ -146,3 +146,43 @@ nav > a:hover {
 .btn:hover {
     background-color: #0056b3;
 }
+
+.search-container {
+    position: relative; /* Menambahkan posisi relatif pada container */
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 25px;
+    width: 75%;
+    border: 2px solid black; /* Menambahkan border hitam di sekitar input */
+    border-radius: 20px; /* Membuat border input melengkung */
+    margin-right: 8px;
+    outline: none; /* Menghapus outline default saat fokus */
+    padding-left: 55px; /* Memberikan ruang untuk ikon di kiri input */
+}
+
+.search-btn {
+    background-color: transparent; /* Menghapus latar belakang tombol */
+    border: none; /* Menghapus border tombol */
+    cursor: pointer;
+    position: absolute; /* Mengatur posisi ikon di dalam input */
+    left: 10px; /* Posisi ikon di dalam kotak pencarian */
+    top: 50%;
+    transform: translateY(-50%); /* Vertikal center */
+}
+
+.search-icon {
+    width: 50px; /* Ukuran ikon lebih kecil */
+    height: 20px;
+}
+
+.search-btn:hover {
+    background-color: transparent; /* Tidak ada perubahan saat tombol disorot */
+}
+
+.search-input:focus {
+    outline: none; /* Menghapus outline saat input difokuskan */
+    box-shadow: none; /* Menghapus shadow jika ada */
+}
