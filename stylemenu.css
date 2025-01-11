@@ -131,14 +131,14 @@ nav ul li:hover > a {
     padding: 0 20px;
 }
 
-.menu-grid {
+.resto-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 /* Menu Item Styling */
-.menu-item {
+.resto-item {
     text-align: center;
     border: 2px solid #f1f1f1;
     padding: 15px;
@@ -151,7 +151,7 @@ nav ul li:hover > a {
     text-decoration: none;
 }
 
-.menu-item img {
+.resto-item img {
     width: 100%;
     height: auto;
     max-height: 150px;
@@ -160,7 +160,7 @@ nav ul li:hover > a {
     margin-bottom: 10px;
 }
 
-.menu-item h3 {
+.resto-item h3 {
     font-size: 20px;
     margin: 10px 0;
     font-weight: 700;
@@ -168,7 +168,7 @@ nav ul li:hover > a {
 }
 
 /* Hover Effect on Menu Items */
-.menu-item:hover {
+.resto-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-color: #34a17b;
