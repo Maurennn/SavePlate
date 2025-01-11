@@ -309,7 +309,7 @@ nav ul li:hover > a {
     }
 
     .contact-detail > div, .contact-detail > form {
-        width: 50%;
+        width: 100%;
     }
 
     form {
