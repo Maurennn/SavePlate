@@ -25,26 +25,26 @@
         <form action="register.php" method="POST">
             <div class="form-group">
                 <div class="input-group">
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Your Name" required>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="input-group">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-group">
-                    <label for="password"></label>
-                    <input type="password" id="password" placeholder="Your Password" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Your Password" required>
                 </div>
                 <div class="input-group">
-                    <label for="confirm-password"></label>
-                    <input type="password" id="confirm-password" placeholder="Confirm Your Password" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Your Password" required>
                 </div>
-                <button class="btn">Register</button>
             </div>
+            <button class="btn">Register</button>
             <p>
                 <span style="color: black;">Already have an account?</span> 
-                <a href="login.html" style="color: #6cb4f7;">Login here</a>
+                <a href="login.html" style="color: #FFC108;">Login here</a>
             </p>
         </form>
     </section>
@@ -70,41 +70,6 @@
         #register h1 {
             margin-bottom: 32px;
             font-size: 36px;
-        }
-
-        #register form{
-            border: 2px solid #e3e1e1; 
-            border-radius: 5px; 
-            padding: 20px;
-            display: inline-block; 
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        }
-
-        #register button{
-            padding: 8px 20px;
-            background-color:   #d4d5d8;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            max-width: 350px;
-            width: 100%;
-            margin: auto;
-        }
-
-        #register label{
-            text-align: left;
-        }
-
-        #register span{
-            font-size: 18px;
-        }
-
-        #register a{
-            font-size: 18px;
         }
 
         .form-group {
@@ -135,13 +100,13 @@
         }
 
         .input-group input:focus {
-            border-color: #34a17b;
+            border-color: #FFC108;
             outline: none;
         }
 
         footer {
             padding: 16px 128px;
-            background-color: #34a17b;
+            background-color: #FFC108;
             color: white;
             display: flex;
             justify-content: space-between;
@@ -156,10 +121,6 @@
         footer .social-icon {
             display: flex;
             gap: 32px;
-        }
-
-        button.btn:hover {
-            text-decoration: underline;
         }
     </style>
 </body>
