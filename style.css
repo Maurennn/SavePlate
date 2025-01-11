@@ -598,3 +598,44 @@ nav ul li:hover > a {
         background-color: #c7cdcf;
         font-weight: 700 !important;
     }
+
+/* Gaya untuk gambar profil */
+.profile {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    width: 30px; /* Ukuran gambar profil */
+    height: 30px;
+    border-radius: 50%; /* Membuat gambar bulat */
+}
+
+/* Gaya untuk dropdown */
+.dropdown-profile {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.profile:hover .dropdown-profile {
+    display: block;
+}
+
+.dropdown-profile li {
+    padding: 8px 16px;
+}
+
+.dropdown-profile li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-profile li a:hover {
+    background-color: #f1f1f1;
+}
+    

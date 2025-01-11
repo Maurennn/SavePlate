@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user && password_verify($password, $user['password'])) {
         // Successful login, redirect to index.html
-        header("Location: index.html");
+        header("Location: homepagelogin.html");
         exit(); // Stop further execution
     } else {
         echo "Invalid email or password.";
