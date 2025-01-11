@@ -1,10 +1,10 @@
-/* Mengatur font dari Google Fonts */
+/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden; /* Menyembunyikan scroll bar horizontal */
+    overflow-x: hidden; /* Hide horizontal scroll */
 }
 
 /* Header */
@@ -29,12 +29,12 @@ header .container {
 
 header h1 {
     margin: 0;
-    /* animation: flash 1s infinite; */
     animation: bounceIn 1s;
     color: white;
     font-size: 48px;
 }
 
+/* Keyframe Animations */
 @keyframes bounceIn {
     0% {
         filter: opacity(0);
@@ -63,6 +63,7 @@ header h1 {
     }
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -71,14 +72,57 @@ nav ul {
     gap: 20px;
 }
 
+nav ul li {
+    position: relative;
+}
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 200;
     font-size: 24px;
+    display: block;
+    padding: 10px;
 }
 
 nav ul li a:hover {
+    color: black;
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34a17b;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #34a17b;
+}
+
+nav ul li:hover > a {
     color: black;
 }
 
@@ -95,7 +139,7 @@ nav ul li a:hover {
     gap: 20px;
 }
 
-/* Kotak Menu Item */
+/* Menu Item Styling */
 .menu-item {
     text-align: center;
     border: 2px solid #f1f1f1;
@@ -125,14 +169,14 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Hover Effect */
+/* Hover Effect on Menu Items */
 .menu-item:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     border-color: #34a17b;
 }
 
-/* Detail Produk */
+/* Product Details */
 .product-details {
     max-width: 1200px;
     margin: 20px auto;
@@ -153,6 +197,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Product Page Layout */
 .product {
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +238,7 @@ nav ul li a:hover {
     color: black;
 }
 
+/* Product Actions */
 .product-actions {
     display: flex;
     align-items: center;
@@ -254,7 +300,7 @@ footer p {
     font-size: 14px;
 }
 
-/* Responsif */
+/* Responsive Styles */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
