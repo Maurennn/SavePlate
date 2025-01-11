@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost'; // Database host
-$db = 'saveplate_db'; // Database name
+$db = 'saveplate'; // Database name
 $user = 'root'; // Database username
 $pass = ''; // Database password
 
