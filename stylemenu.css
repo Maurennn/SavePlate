@@ -9,14 +9,12 @@ body {
 
 /* Header */
 header {
-    background-color: #34a17b;
-    color: white;
-    padding: 16px;
+    padding: 16px 128px;
     position: sticky;
     top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+    background-color: #34a17b;
+    z-index: 5;
+    }
 
 header .container {
     display: flex;

@@ -36,7 +36,7 @@
             <button class="btn">Login</button>
             <p>
                 <span style="color: black;">Don't have an account?</span> 
-                <a href="register.html" style="color: #FFC108;">Register here</a>
+                <a href="register.html" style="color: #34a17b;">Register here</a>
             </p>
         </form>
     </section>
@@ -54,6 +54,32 @@
     </footer>
 
     <style>
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 128px;
+            position: sticky;
+            top: 0;
+            background-color: #34a17b;
+            z-index: 5;
+        }      
+
+        #header h1 {
+            margin: 0;
+            animation: bounceIn 1s;
+            color: white;
+            font-size: 48px;
+        }
+
+        nav > a {
+            margin-left: 12px;
+        }
+
+        nav > a:hover {
+            color: #121212;
+        }
+
         #login {
             padding: 64px 128px;
             text-align: center;
@@ -92,13 +118,13 @@
         }
 
         .input-group input:focus {
-            border-color: #FFC108;
+            border-color: #34a17b;
             outline: none;
         }
 
         footer {
             padding: 16px 128px;
-            background-color: #FFC108;
+            background-color: #34a17b;
             color: white;
             display: flex;
             justify-content: space-between;
