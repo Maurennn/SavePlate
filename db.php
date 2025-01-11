@@ -1,23 +1,13 @@
 <?php
-class Database {
-    private $host = "localhost"; // Change if your database server is different
-    private $db_name = "saveplate"; // The name of the database
-    private $username = "root"; // Your database username
-    private $password = ""; // Your database password
-    public $conn;
+$host = 'localhost'; // Database host
+$db = 'saveplate_db'; // Database name
+$user = 'root'; // Database username
+$pass = ''; // Database password
 
-    // Get the database connection
-    public function getConnection() {
-        $this->conn = null;
-
-        try {
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $exception) {
-            echo "Connection error: " . $exception->getMessage();
-        }
-
-        return $this->conn;
-    }
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Could not connect to the database $db :" . $e->getMessage());
 }
 ?>
