@@ -25,18 +25,18 @@
         <form action="login.php" method="POST">
             <div class="form-group">
                 <div class="input-group">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="input-group">
-                    <label for="password"></label>
-                    <input type="password" id="password" placeholder="Your Password" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Your Password" required>
                 </div>
-                <button class="btn">Login</button>
             </div>
+            <button class="btn">Login</button>
             <p>
                 <span style="color: black;">Don't have an account?</span> 
-                <a href="register.html" style="color: #6cb4f7;">Register here</a>
+                <a href="register.html" style="color: #FFC108;">Register here</a>
             </p>
         </form>
     </section>
@@ -55,85 +55,65 @@
 
     <style>
         #login {
-            padding: 50px;
+            padding: 64px 128px;
             text-align: center;
         }
 
         #login h1 {
-            margin-bottom: 20px;
-            font-size: 32px;
-        }
-
-        form p {
-                margin-top: 15px;
-                font-size: 14px;
-            }
-
-        form p a {
-            font-size: 14px;
-            color: #004f9a;
-            text-decoration: none;
-        }
-
-        form p a:hover {
-            text-decoration: underline;
+            margin-bottom: 32px;
+            font-size: 36px;
         }
 
         .form-group {
             display: flex;
             flex-direction: column;
-            gap: 15px;
             align-items: center;
+            margin-bottom: 32px;
         }
 
         .input-group {
+            margin-bottom: 16px;
             width: 100%;
-            max-width: 350px;
+            max-width: 400px;
         }
 
         .input-group label {
-            display: block;
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            font-size: 18px;
         }
 
         .input-group input {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        button.btn {
-            padding: 8px 20px;
-            background-color:   #d4d5d8;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            border-radius: 4px;
             font-size: 16px;
-            font-weight: bold;
-            max-width: 350px;
-            width: 100%;
-            margin: auto;
         }
 
-        button.btn:hover {
-            text-decoration: underline;
+        .input-group input:focus {
+            border-color: #FFC108;
+            outline: none;
         }
 
-        #login form {
-            border: 2px solid #e3e1e1; /* Menyamakan border dengan input email dan password */
-            border-radius: 5px; /* Menambahkan border-radius untuk keseragaman */
-            padding: 20px;
-            display: inline-block; /* Menjaga form agar tidak memakan seluruh lebar */
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek shadow */
+        footer {
+            padding: 16px 128px;
+            background-color: #FFC108;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
+        footer p {
+            color: white;
+            width: 50%;
+        }
 
+        footer .social-icon {
+            display: flex;
+            gap: 32px;
+        }
     </style>
 </body>
 </html>
