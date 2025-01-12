@@ -244,7 +244,7 @@ nav ul li:hover > a {
         content: "";
         width: 60px;
         height: 60px;
-        background: url("./images/accent1.svg");
+        background: url("./images/accent2.svg");
         position: absolute;
         left: -20px;
         top: -10px;
@@ -549,7 +549,7 @@ nav ul li:hover > a {
     #our-values h1 {
         font-size: 36px;
         margin-bottom: 40px;
-        color: #333;
+        color: black;
     }
     
     .values-container {
