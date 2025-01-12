@@ -342,6 +342,7 @@ nav ul li:hover > a {
                                 "email phone"
                                 "message message";
     }
+    
     #input-name {
         grid-area: name;
     }
@@ -496,12 +497,12 @@ nav ul li:hover > a {
     .goals-item h2 {
         font-size: 1.6rem;
         font-weight: 600;
-        color: #1a1919;
+        color: black;
     }
     
     .goals-item p {
         font-size: 1rem;
-        color: #474747;
+        color: rgb(255, 255, 255);
     }
     
     #about-us {
