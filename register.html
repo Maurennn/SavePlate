@@ -10,20 +10,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="header">
-        <h1>SavePlate</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="keranjang.html">Keranjang</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </header>
-
     <section id="register">
-        <h1>Register</h1>
+
         <form action="register.php" method="POST">
             <div class="form-group">
+                <h1>Register</h1>
                 <div class="input-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -40,36 +31,49 @@
                     <label for="confirm-password">Confirm Password</label>
                     <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Your Password" required>
                 </div>
+                <button class="btn">Register</button>
             </div>
-            <button class="btn">Register</button>
             <p>
                 <span style="color: black;">Already have an account?</span> 
                 <a href="login.html" style="color: #2348dd;">Login here</a>
             </p>
         </form>
-    </section>
-
-    <footer id="footer">
-        <div>
-            <h1>SavePlate</h1>
-            <p>&copy; 2024 SavePlate. All rights reserved.</p>
-        </div>
-        <div class="social-icon">
-            <img src="images/Facebook.svg" alt="">
-            <img src="images/Instagram.svg" alt="">
-            <img src="images/Twitter.svg" alt="">
-        </div>
-    </footer>
 
     <style>
         #register {
             padding: 64px 128px;
             text-align: center;
+            height: 100vh; /* Mengatur tinggi halaman menjadi penuh */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: hidden; /* Menghilangkan scroll */
         }
 
         #register h1 {
-            margin-bottom: 32px;
+            margin-bottom: 20px; 
             font-size: 36px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        #register form {
+            border: 2px solid #c4c4c4;
+            border-radius: 5px;
+            padding: 30px; 
+            display: inline-block;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #register label{
+            text-align: left;
+        }
+
+        #register .btn{    
+            background-color: #acacac;
         }
 
         .form-group {
@@ -104,27 +108,8 @@
             outline: none;
         }
 
-        footer {
-            padding: 16px 128px;
-            background-color: #34a17b;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        footer p {
-            color: white;
-            width: 50%;
-        }
-
-        footer .social-icon {
-            display: flex;
-            gap: 32px;
-        }
-
         #register p{
-            margin-top: 20px;
+            margin-top: 10px;
         }
     </style>
 </body>
