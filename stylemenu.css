@@ -61,7 +61,7 @@ header h1 {
     }
 }
 
-/* Navigation */
+/*NavBar*/
 nav ul {
     list-style: none;
     padding: 0;
@@ -122,6 +122,51 @@ nav ul li:hover .dropdown {
 
 nav ul li:hover > a {
     color: black;
+}
+
+/* Gaya untuk dropdown */
+.dropdown-profile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #34a17b;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+}
+
+.profile:hover .dropdown-profile {
+    display: block;
+}
+
+.dropdown-profile li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.dropdown-profile li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0;
+    display: block;
+}
+
+.dropdown-profile li a:hover {
+    background-color: #34a17b;
+}
+
+/* Gaya untuk gambar profil */
+.profile {
+    position: relative;
+    display: inline-block;
+}
+    
+.profile-icon {
+    width: 30px; /* Ukuran gambar profil */
+    height: 30px;
+    border-radius: 50%; /* Membuat gambar bulat */
 }
 
 /* Section Menu */
