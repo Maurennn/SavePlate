@@ -17,7 +17,7 @@
             <h1>SavePlate</h1>
             <nav>
                 <a href="homepage.html">Home</a>
-                <a href="restoranmakananberat.html">Menu</a>
+                <a href="menu.html">Menu</a>
                 <a href="keranjang.html">Keranjang</a>
                 <a href="login.html">Login</a>
             </nav>
@@ -25,17 +25,26 @@
 
         <!-- Tabs -->
         <div class="tabs">
-            <a href="belumDibayar.html" class="tab">Belum Dibayar</a>
-            <div class="tab active">Pesanan Aktif</div>
-            <div class="tab">Pesanan Selesai</div>
-            <div class="tab">Pesanan Dibatalkan</div>
+            <a href="#" class="tab" id="tabBelumDibayar">Belum Dibayar</a>
+            <a href="#" class="tab active" id="tabPesananAktif">Pesanan Aktif</a>
+            <a href="#" class="tab" id="tabPesananSelesai">Pesanan Selesai</a>
+            <a href="#" class="tab" id="tabPesananDibatalkan">Pesanan Dibatalkan</a>
         </div>
 
         <!-- Content -->
-        <div class="content">
+        <div class="content" id="contentBelumDibayar" style="display: none;">
+            <p>Belum Dibayar Content</p>
+        </div>
+        <div class="content" id="contentPesananAktif">
             <img src="placeholder.png" alt="No Orders">
             <p>Kamu belum punya pesanan nih<br>Segera pesan dan selamatkan makanan favoritmu</p>
             <a href="#" class="btn">Pesan Sekarang</a>
+        </div>
+        <div class="content" id="contentPesananSelesai" style="display: none;">
+            <p>Pesanan Selesai Content</p>
+        </div>
+        <div class="content" id="contentPesananDibatalkan" style="display: none;">
+            <p>Pesanan Dibatalkan Content</p>
         </div>
     </div>
 
