@@ -17,7 +17,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="homepagelogin.html">Home</a></li>
-                    <li><a href="">Menu</a>
+                    <li><a href="#">Menu</a>
                         <ul class="dropdown">
                             <li><a href="restoranmakananberat.html">Makanan Berat</a></li>
                             <li><a href="restoranrotidankue.html">Roti dan Kue</a></li>
@@ -34,12 +34,11 @@
                             <li><a href="homepage.html">Logout</a></li> <!-- Link untuk logout -->
                         </ul>
                     </li>
-                    
-                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <div class="tabs">
         <div class="tab" data-tab="belumDibayar">Belum Dibayar</div>
         <div class="tab active" data-tab="pesananAktif">Pesanan Aktif</div>
@@ -53,42 +52,7 @@
         <p>Kamu belum punya pesanan nih<br>Segera pesan dan selamatkan makanan favoritmu</p>
         <a href="#" class="btn">Pesan Sekarang</a>
     </div>
-</div>
 
-<!-- JavaScript -->
-<script>
-    const tabs = document.querySelectorAll('.tab');
-    const content = document.getElementById('content');
-
-    const tabContent = {
-        belumDibayar: `
-            <img src="placeholder.png" alt="No Orders">
-            <p>Belum ada pesanan yang dibayar. Yuk, segera lunasi pesananmu!</p>
-            <a href="#" class="btn">Bayar Sekarang</a>
-        `,
-        pesananAktif: `
-            <img src="placeholder.png" alt="No Orders">
-            <p>Kamu belum punya pesanan nih<br>Segera pesan dan selamatkan makanan favoritmu</p>
-            <a href="#" class="btn">Pesan Sekarang</a>
-        `,
-        pesananSelesai: `
-            <img src="placeholder.png" alt="Completed Orders">
-            <p>Belum ada pesanan yang selesai. Yuk, selesaikan pesananmu!</p>
-        `,
-        pesananDibatalkan: `
-            <img src="placeholder.png" alt="Canceled Orders">
-            <p>Belum ada pesanan yang dibatalkan. Jangan lupa cek pesananmu!</p>
-        `
-    };
-
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            document.querySelector('.tab.active').classList.remove('active');
-            tab.classList.add('active');
-            const tabKey = tab.getAttribute('data-tab');
-            content.innerHTML = tabContent[tabKey];
-        });
-    });
-</script>
+    <script src="tabs.js"></script>
 </body>
 </html>
