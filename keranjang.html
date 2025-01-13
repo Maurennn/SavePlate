@@ -4,42 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Pesanan</title>
+    <title>SavePlate</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styleKeranjang.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header id="header">
+    <header id="header">
+        <div class="container"> 
             <h1>SavePlate</h1>
             <nav>
-                <a href="homepage.html">Home</a>
-                <a href="restoranmakananberat.html">Menu</a>
-                <a href="keranjang.html">Keranjang</a>
-                <a href="login.html">Login</a>
+                <ul class="nav-links">
+                    <li><a href="homepagelogin.html">Home</a></li>
+                    <li><a href="">Menu</a>
+                        <ul class="dropdown">
+                            <li><a href="restoranmakananberat.html">Makanan Berat</a></li>
+                            <li><a href="restoranrotidankue.html">Roti dan Kue</a></li>
+                            <li><a href="restoranminuman.html">Minuman</a></li>
+                            <li><a href="restorancamilan.html">Camilan</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="keranjang.html">Keranjang</a></li>
+                    <li class="profile">
+                        <a href="#">
+                            <img src="images/profile.svg" alt="Profile" class="profile-icon"> <!-- Ganti dengan path gambar profil -->
+                        </a>
+                        <ul class="dropdown-profile">
+                            <li><a href="homepage.html">Logout</a></li> <!-- Link untuk logout -->
+                        </ul>
+                    </li>
+                    
+                    </li>
+                </ul>
             </nav>
-        </header>
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <a href="belumDibayar.html" class="tab">Belum Dibayar</a>
-            <div class="tab active">Pesanan Aktif</div>
-            <div class="tab">Pesanan Selesai</div>
-            <div class="tab">Pesanan Dibatalkan</div>
         </div>
+    </header>
+    <div class="tabs">
+        <div class="tab" data-tab="belumDibayar">Belum Dibayar</div>
+        <div class="tab active" data-tab="pesananAktif">Pesanan Aktif</div>
+        <div class="tab" data-tab="pesananSelesai">Pesanan Selesai</div>
+        <div class="tab" data-tab="pesananDibatalkan">Pesanan Dibatalkan</div>
+    </div>
 
-        <!-- Content -->
-        <div class="content">
+    <!-- Content -->
+    <div class="content" id="content">
+        <img src="placeholder.png" alt="No Orders">
+        <p>Kamu belum punya pesanan nih<br>Segera pesan dan selamatkan makanan favoritmu</p>
+        <a href="#" class="btn">Pesan Sekarang</a>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    const tabs = document.querySelectorAll('.tab');
+    const content = document.getElementById('content');
+
+    const tabContent = {
+        belumDibayar: `
+            <img src="placeholder.png" alt="No Orders">
+            <p>Belum ada pesanan yang dibayar. Yuk, segera lunasi pesananmu!</p>
+            <a href="#" class="btn">Bayar Sekarang</a>
+        `,
+        pesananAktif: `
             <img src="placeholder.png" alt="No Orders">
             <p>Kamu belum punya pesanan nih<br>Segera pesan dan selamatkan makanan favoritmu</p>
             <a href="#" class="btn">Pesan Sekarang</a>
-        </div>
-    </div>
+        `,
+        pesananSelesai: `
+            <img src="placeholder.png" alt="Completed Orders">
+            <p>Belum ada pesanan yang selesai. Yuk, selesaikan pesananmu!</p>
+        `,
+        pesananDibatalkan: `
+            <img src="placeholder.png" alt="Canceled Orders">
+            <p>Belum ada pesanan yang dibatalkan. Jangan lupa cek pesananmu!</p>
+        `
+    };
 
-    <!-- Link JavaScript file -->
-    <script src="tabs.js"></script>
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelector('.tab.active').classList.remove('active');
+            tab.classList.add('active');
+            const tabKey = tab.getAttribute('data-tab');
+            content.innerHTML = tabContent[tabKey];
+        });
+    });
+</script>
 </body>
 </html>
