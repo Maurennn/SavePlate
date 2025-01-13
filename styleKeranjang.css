@@ -124,31 +124,37 @@ nav ul li:hover > a {
     color: black;
 }
 
+/* Gaya untuk dropdown */
 .dropdown-profile {
     display: none;
     position: absolute;
+    top: 100%;
     right: 0;
-    background-color: #fff;
+    background-color: #34a17b;
+    border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    padding: 0;
 }
-    
+
 .profile:hover .dropdown-profile {
     display: block;
 }
-    
+
 .dropdown-profile li {
-    padding: 8px 16px;
+    list-style: none;
+    padding: 10px 20px;
 }
-    
+
 .dropdown-profile li a {
+    color: white;
     text-decoration: none;
-    color: #333;
+    font-size: 18px;
+    padding: 8px 0;
     display: block;
 }
-    
+
 .dropdown-profile li a:hover {
-    background-color: #f1f1f1;
+    background-color: #34a17b;
 }
 
 /* Gaya untuk gambar profil */
