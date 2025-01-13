@@ -1,5 +1,5 @@
 <?php
-$host = 'localhost:3307'; // Database host
+$host = 'localhost'; // Database host
 $db = 'saveplate'; // Database name
 $user = 'root'; // Database username, sesuaikan dengan kredensial Anda
 $pass = ''; // Database password, sesuaikan jika ada password
